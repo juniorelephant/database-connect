@@ -9,6 +9,7 @@
     $sql = "SELECT * FROM employee";
     if( !$result = $mysqli_connect->query($sql)){
         echo "coudnt find the Db table";
+        
     }else{
         echo "find something that you know"."we have".$result->num_rows." "."rows in the table";
     }
